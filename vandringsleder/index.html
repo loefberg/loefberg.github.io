@@ -1,89 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="sv">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Vandringsleder i Värmland</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <style>
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;      
-      margin: 50px;
-    }
-
-    body, th, td, caption {
-        font-size: 20px;
-    } 
-
-    @media only screen and (max-width: 768px) {
-      body, th, td, caption {
-          font-size: 30px;
-      }       
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      border-spacing: 2px;
-      margin-top: 3em;
-    }
-
-    table > caption {
-      text-align: left;
-      margin-bottom: 10px;
-      font-size: 2em;
-    }
-
-    thead {
-    }
-
-    th {    
-      white-space: nowrap;
-      height: 50px;
-      background: rgb(244, 245, 247);  
-    }
-
-    td {
-      vertical-align: top;
-    }
-
-
-    th, td {
-      text-align: left;
-      border: 1px solid rgb(193, 199, 208);
-      padding: 10px;
-    }
-
-    /* Led */
-    th:nth-child(1), td:nth-child(1) {
-      width: 200px;
-    }
-
-    /* Kommun */
-    th:nth-child(2), td:nth-child(2) {
-      width: 100px;
-    }
-
-    /* Längd */
-    th:nth-child(3), td:nth-child(3) {
-      width: 100px;
-    }
-
-    /* Cirkulär */
-    th:nth-child(4), td:nth-child(4) {
-      width: 300px;
-    }
+      margin: 20px;
+    }  
   </style>
 </head>
 <body>
   <h1>Vandringsleder i Värmland</h1>
   <p>Den här listan kommer ursprungligen från <a href="https://www.nwt.se/2020/06/04/vandra-genom-varmland/" rel="noreferrer">Vandra genom Värmland</a> i Nya Wermlands-tidningen.</p>
 
-  <div>
-    <table>
-      <caption>Svåra leder med bitvis stark kupering.</caption>
-      <thead>
+  <h3>Svåra leder med bitvis stark kupering.</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="thead-light">
         <tr>
           <th class="path">Led</th>
           <th class="municipal">Kommun</th>
           <th class="length">Längd (km)</th>
-          <th class="circulat">Återvänder till utgångspunkt</th>
+          <th class="circulat">Slutar</th>
           <th class="other">Övrigt</th>
         </tr>
       </thead>
@@ -133,15 +73,16 @@
     </table>
   </div>
 
-  <div>
-    <table>
-      <caption>Medelsvåra leder som bitvis är krävande.</caption>
-      <thead>
+  <h3>Medelsvåra leder som bitvis är krävande.</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+
+      <thead class="thead-light">
         <tr>
           <th class="path">Led</th>
           <th class="municipal">Kommun</th>
           <th class="length">Längd (km)</th>
-          <th class="circulat">Återvänder till utgångspunkt</th>
+          <th class="circulat">Slutar</th>
           <th class="other">Övrigt</th>
         </tr>
       </thead>
@@ -345,128 +286,119 @@
    </table>
  </div>
 
- <div>
-  <table>
-    <caption>Lättare leder där små barn och fikakorgen kan följa med.</caption>
-    <thead>
+ <h3>Lättare leder där små barn och fikakorgen kan följa med.</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">    
+    <thead class="thead-light">
       <tr>							
         <th class="path">Led</th>
         <th class="municipal">Kommun</th>
         <th class="length">Längd (km)</th>
-        <th class="circulat">Återvänder till utgångspunkt</th>
+        <th class="circulat">Slutar</th>
         <th class="other">Övrigt</th>
       </tr>
-
     </thead>
-  </thead>          
-  <tbody>
-    <tr>
-     <td>Bergs klätt</td>
-     <td>Arvika</td>
-     <td>3,5</td>
-     <td>Ja, börjar och slutar vid Berg.</td>
-     <td>Utsikt över Glafsfjorden, toaletter, grillplats och vindskydd finns.</td>
-   </tr>
-   <tr>
-     <td>Natur- och kulturstig Glaskogen</td>
-     <td>Arvika</td>
-     <td>5</td>
-     <td>Börjar i Lenungshammar</td>
-     <td>Historiska och geologiska sevärdheter. Café och rastplatser finns.</td>
-   </tr>
-   <tr>
-     <td>Natur- och kulturstigen Skutboudden </td>
-     <td>Arvika</td>
-     <td>2,3</td>
-     <td>Ja, börjar och slutar vid soldattorpet, Brunskogs hembygdsgård.</td>
-     <td>Natur- och kultursevärdheter.</td>
-   </tr>
-   <tr>
-     <td>Kulturvandring</td>
-     <td>Eda</td>
-     <td>10</td>
-     <td>Ja, börjar och slutar vid kommunhuset i Charlottenberg.</td>
-     <td>Informationshäfte om kultursevärdheter runtom leden finns på informationcentralen.</td>
-   </tr>
-   <tr>
-     <td>Säterleden</td>
-     <td>Eda</td>
-     <td>7</td>
-     <td>Nej, går mellan Remjäng och Remjängssätern.</td>
-     <td>Följer den gamla sätervägen mellan Remjängs vattensåg/spånhyvel och Remjängssätern</td>
-   </tr>
-   <tr>
-     <td>Kyrkleden</td>
-     <td>Eda</td>
-     <td>17</td>
-     <td>Nej, går mellan Skillingmarks kyrka och Valfjällets utsiktstorn.</td>
-     <td>Går upp på Valfjället med fin utsikt.</td>
-   </tr>
-   <tr>
-     <td>Trollstigen Lesjöfors</td>
-     <td>Filipstad</td>
-     <td>3</td>
-     <td>Ja</td>
-     <td>Finns både rastplats, tomtar och troll för små vandrare.</td>
-   </tr>
-   <tr>
-     <td>Getgarsudde</td>
-     <td>Grums</td>
-     <td>2,1</td>
-     <td>Ja</td>
-     <td>Går in i ett naturreservat. Högt naturvärde.</td>
-   </tr>
-   <tr>
-     <td>Silverleden</td>
-     <td>Grums</td>
-     <td>8,6</td>
-     <td>Ja, kan påbörjas vid Värmskogs vandrarhem eller LM Erikssons-gården</td>
-     <td>Historiskt intressant led. Går förbi flera gruvor. Större barngrupper rekommenderas inte att besöka området.</td>
-   </tr>
-   <tr>
-     <td>Brattfallet</td>
-     <td>Hagfors</td>
-     <td>1 och 2 kilometer</td>
-     <td>Ja, börjar och slutar vid Brattfallet</td>
-     <td>Går förbi Brattfallet uppströms till gamla flottningsdammen. Rastplats och handikappdass finns. Svåra Halgåleden börjar här.</td>
-   </tr>
-   <tr>
-     <td>Mariebergs strandängar</td>
-     <td>Karlstad</td>
-     <td>3</td>
-     <td>Ja, börjar och slutar vid Naturrum i Mariebergsskogen.</td>
-     <td>Går runt Mariebergs strandängar. Rikt fågelliv och vacker natur. Rastplatser finns.</td>
-   </tr>
-   <tr>
-     <td>Erlanderstigen</td>
-     <td>Munkfors</td>
-     <td>1,3</td>
-     <td>Ja, börjar och slutar vid Erlandergården i Ransäter.</td>
-     <td>Går genom biotopskyddad skog och över gammal stenbro. Rastplats finns.</td>
-   </tr>
-   <tr>
-     <td>Sahlströmsgårdens vandringsleder</td>
-     <td>Torsby</td>
-     <td>1,6 och 4</td>
-     <td>Ja, börjar och slutar vid Sahlströmsgården</td>
-     <td>Kultur- och naturleder i fin miljö. Det finns informationstavlor om om området.</td>
-   </tr>
-   <tr>
-     <td>Skulpturpromenad</td>
-     <td>Årjäng</td>
-     <td>3</td>
-     <td>Nej, går mellan Årjängs centrum och Kyrkeruds folkhögskola.</td>
-     <td>Går förbi flera skulpturer, de flesta i Bohusgranit, och art scape-målningar. Och Trollet så klart!</td>
-   </tr>
- </tbody>
-</table>
+    <tbody>
+      <tr>
+       <td>Bergs klätt</td>
+       <td>Arvika</td>
+       <td>3,5</td>
+       <td>Ja, börjar och slutar vid Berg.</td>
+       <td>Utsikt över Glafsfjorden, toaletter, grillplats och vindskydd finns.</td>
+     </tr>
+     <tr>
+       <td>Natur- och kulturstig Glaskogen</td>
+       <td>Arvika</td>
+       <td>5</td>
+       <td>Börjar i Lenungshammar</td>
+       <td>Historiska och geologiska sevärdheter. Café och rastplatser finns.</td>
+     </tr>
+     <tr>
+       <td>Natur- och kulturstigen Skutboudden </td>
+       <td>Arvika</td>
+       <td>2,3</td>
+       <td>Ja, börjar och slutar vid soldattorpet, Brunskogs hembygdsgård.</td>
+       <td>Natur- och kultursevärdheter.</td>
+     </tr>
+     <tr>
+       <td>Kulturvandring</td>
+       <td>Eda</td>
+       <td>10</td>
+       <td>Ja, börjar och slutar vid kommunhuset i Charlottenberg.</td>
+       <td>Informationshäfte om kultursevärdheter runtom leden finns på informationcentralen.</td>
+     </tr>
+     <tr>
+       <td>Säterleden</td>
+       <td>Eda</td>
+       <td>7</td>
+       <td>Nej, går mellan Remjäng och Remjängssätern.</td>
+       <td>Följer den gamla sätervägen mellan Remjängs vattensåg/spånhyvel och Remjängssätern</td>
+     </tr>
+     <tr>
+       <td>Kyrkleden</td>
+       <td>Eda</td>
+       <td>17</td>
+       <td>Nej, går mellan Skillingmarks kyrka och Valfjällets utsiktstorn.</td>
+       <td>Går upp på Valfjället med fin utsikt.</td>
+     </tr>
+     <tr>
+       <td>Trollstigen Lesjöfors</td>
+       <td>Filipstad</td>
+       <td>3</td>
+       <td>Ja</td>
+       <td>Finns både rastplats, tomtar och troll för små vandrare.</td>
+     </tr>
+     <tr>
+       <td>Getgarsudde</td>
+       <td>Grums</td>
+       <td>2,1</td>
+       <td>Ja</td>
+       <td>Går in i ett naturreservat. Högt naturvärde.</td>
+     </tr>
+     <tr>
+       <td>Silverleden</td>
+       <td>Grums</td>
+       <td>8,6</td>
+       <td>Ja, kan påbörjas vid Värmskogs vandrarhem eller LM Erikssons-gården</td>
+       <td>Historiskt intressant led. Går förbi flera gruvor. Större barngrupper rekommenderas inte att besöka området.</td>
+     </tr>
+     <tr>
+       <td>Brattfallet</td>
+       <td>Hagfors</td>
+       <td>1 och 2 kilometer</td>
+       <td>Ja, börjar och slutar vid Brattfallet</td>
+       <td>Går förbi Brattfallet uppströms till gamla flottningsdammen. Rastplats och handikappdass finns. Svåra Halgåleden börjar här.</td>
+     </tr>
+     <tr>
+       <td>Mariebergs strandängar</td>
+       <td>Karlstad</td>
+       <td>3</td>
+       <td>Ja, börjar och slutar vid Naturrum i Mariebergsskogen.</td>
+       <td>Går runt Mariebergs strandängar. Rikt fågelliv och vacker natur. Rastplatser finns.</td>
+     </tr>
+     <tr>
+       <td>Erlanderstigen</td>
+       <td>Munkfors</td>
+       <td>1,3</td>
+       <td>Ja, börjar och slutar vid Erlandergården i Ransäter.</td>
+       <td>Går genom biotopskyddad skog och över gammal stenbro. Rastplats finns.</td>
+     </tr>
+     <tr>
+       <td>Sahlströmsgårdens vandringsleder</td>
+       <td>Torsby</td>
+       <td>1,6 och 4</td>
+       <td>Ja, börjar och slutar vid Sahlströmsgården</td>
+       <td>Kultur- och naturleder i fin miljö. Det finns informationstavlor om om området.</td>
+     </tr>
+     <tr>
+       <td>Skulpturpromenad</td>
+       <td>Årjäng</td>
+       <td>3</td>
+       <td>Nej, går mellan Årjängs centrum och Kyrkeruds folkhögskola.</td>
+       <td>Går förbi flera skulpturer, de flesta i Bohusgranit, och art scape-målningar. Och Trollet så klart!</td>
+     </tr>
+   </tbody>
+ </table>
 </div>
-
-
-
-
-
-
-
 </body>
 </html>
