@@ -1,0 +1,463 @@
+<html>
+<head>
+  <style>
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+      margin: 50px;
+
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border-spacing: 2px;
+      margin-top: 2em;
+    }
+
+    table > caption {
+      text-align: left;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    thead {
+    }
+
+    th {    
+      white-space: nowrap;
+      height: 50px;
+      background: rgb(244, 245, 247);  
+    }
+
+    td {
+      vertical-align: top;
+    }
+
+
+    th, td {
+      text-align: left;
+      border: 1px solid rgb(193, 199, 208);
+      padding: 10px;
+    }
+
+    /* Led */
+    th:nth-child(1), td:nth-child(1) {
+      width: 200px;
+    }
+
+    /* Kommun */
+    th:nth-child(2), td:nth-child(2) {
+      width: 100px;
+    }
+
+    /* Längd */
+    th:nth-child(3), td:nth-child(3) {
+      width: 100px;
+    }
+
+    /* Cirkulär */
+    th:nth-child(4), td:nth-child(4) {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vandringsleder i Värmland</h1>
+  <p>Den här listan kommer ursprungligen från <a href="https://www.nwt.se/2020/06/04/vandra-genom-varmland/">Vandra genom Värmland</a> i Nya Wermlands-tidningen.</p>
+
+  <div>
+    <table>
+      <caption>Svåra leder med bitvis stark kupering.</caption>
+      <thead>
+        <tr>
+          <th class="path">Led</th>
+          <th class="municipal">Kommun</th>
+          <th class="length">Längd (km)</th>
+          <th class="circulat">Återvänder till utgångspunkt</th>
+          <th class="other">Övrigt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kopparleden, Lesjöfors</td>
+          <td>Filipstad</td>
+          <td>10,5</td>
+          <td>Ja, börjar och slutar vid Smeddammens badplats.</td>
+          <td>Går förbi elva torpruiner. Omväxlande miljö, stövlar eller kängor rekommenderas.</td>
+        </tr>
+        <tr><td>Kycklingleden, Liljedal</td>
+          <td>Grums</td>
+          <td>5,7</td>
+          <td>Ja, börjar och slutar vid Buda badplats.</td>
+          <td>Ovanlig flora och fauna. Utsikt över Vänern. Grillplats och dass (Budapest 2.0) finns.</td>
+        </tr>
+        <tr>
+          <td>Edsbonden</td>
+          <td>Grums</td>
+          <td>2,3</td>
+          <td>Nej, börjar vid Ås i Slottsbron och leder upp till en fornborg.</td>
+          <td>Svår terräng. Edsbonden är den näst högst belägna punkt runt Vänern.</td>
+        </tr>
+        <tr>
+          <td>Halgåleden</td>
+          <td>Hagfors</td>
+          <td>7</td>
+          <td>Ja, börjar och slutar vid Brattfallet.</td>
+          <td>Bitvis svår med stora nivåskillnader. Utsikt över Klarälven. Vindskydd finns. Här börjar också lätta Brattfallslederna.</td>
+        </tr>
+        <tr>
+          <td>Åsenslingan</td>
+          <td>Hagfors</td>
+          <td>8</td>
+          <td>Utgår från Hagfors stadshus och upp till Värmullsåsen.</td>
+          <td>Vandring genom hundraårig tallskog. Fin utsikt från Värmullåsens topp.</td>
+        </tr>
+        <tr>
+          <td>Skutbergsleden</td>
+          <td>Kil/Karlstad</td>
+          <td>2,2</td>
+          <td>Nej, går mellan Sannerudsvallen i Kil och Skutbergets motionscentral i Karlstad.</td>
+          <td>Går genom Kilsravinerna. Ravinerna är starkt kuperade och är på sina ställen nästan tropiska på somrarna.</td>              
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>
+    <table>
+      <caption>Medelsvåra leder som bitvis är krävande.</caption>
+      <thead>
+        <tr>
+          <th class="path">Led</th>
+          <th class="municipal">Kommun</th>
+          <th class="length">Längd (km)</th>
+          <th class="circulat">Återvänder till utgångspunkt</th>
+          <th class="other">Övrigt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td>Vandringsleder vid Jössestugan</td>
+         <td>Arvika</td>
+         <td>5 och 7 och 11</td>
+         <td>Ja, börjar och slutar vid Jössestugan.</td>
+         <td>Delvis kuperad terräng. Utsikt över Racken. 11 kilometersleden heter Sotar Blixt-leden, döpt efter ett original i trakten.</td>
+       </tr>
+       <tr><td>Södra Gunnarskogsleden</td>
+         <td>Arvika</td>
+         <td>22</td>
+         <td>Ja, börjar och slutar vid Larstomta vandrarhem. </td>
+         <td>Värmlandsled. Rastplatser finns. Kan utökas med Norra Gunnarskogsleden på 21 km.</td>
+       </tr>
+       <tr>
+         <td>Rämsbergsleden</td>
+         <td>Filipstad</td>
+         <td>5</td>
+         <td>Ja</td>
+         <td>Rundar Rämsbergs gruvby från 1800-talet.</td>
+       </tr>
+       <tr>
+         <td>Ätterösleden</td>
+         <td>Forshaga</td>
+         <td>2</td>
+         <td>Nej. Går från SISU-stugan till Ätterösarna.</td>
+         <td>Leder till två gravrösen från 1500- till 500-talet före Kristus. Kan utökas med andra leder.</td>
+       </tr>
+       <tr>
+         <td>Sävsjöleden</td>
+         <td>Grums</td>
+         <td>8,5</td>
+         <td>Ja, börjar och slutar vid Sävsjöns camping mellan Segmon och Borgvik.</td>
+         <td>Finns två vindskydd utefter leden. På ett ställe måste man dra sig över sjön med flotte. Bordet-mitt-i-skogen finns i anslutning till leden i år. Stövlar behövs!</td>
+       </tr>
+       <tr>
+         <td>Finnvägen</td>
+         <td>Hagfors</td>
+         <td>9</td>
+         <td>Nej, leden startar i Sunnemo och går samma väg tillbaka.</td>
+         <td>Leden sammanfogade förr byarna Gräs och Bosjön.  Gamla finntorp finns skyltade från leden.</td>
+       </tr>
+       <tr>
+         <td>Kilene-Bonäs-Mörudden</td>
+         <td>Hammarö</td>
+         <td>13,8</td>
+         <td>Nej, startar vid Kilenegården.</td>
+         <td>Finns grillstugor med ved längs spåren vid Kilene.</td>
+       </tr>
+       <tr>
+         <td>Acksjöleden</td>
+         <td>Karlstad</td>
+         <td>3,5 och 7 och 15</td>
+         <td>Ja, börjar och slutar vid Acksjöns skola utanför Molkom.</td>
+         <td>Omväxlande natur och vildmarkskänsla. Rast- och grillplats finns.</td>
+       </tr>
+       <tr>
+         <td>Bergviks udde</td>
+         <td>Karlstad</td>
+         <td>1,5</td>
+         <td>Ja, vägen ut från parkeringen till Bergviks udde är 1,5 kilometer.</td>
+         <td>Går förbi en strandäng och gammal tallskog ut till Vänerkanten. Grillplatser finns.</td>
+       </tr>
+       <tr>
+         <td>Frödingleden</td>
+         <td>Karlstad</td>
+         <td>1,2 och 5,8 och 6,4</td>
+         <td>Nej, utgår från Kroppkärr eller Örsholmen och slutar vid Alsters herrgård, Frödingstenen eller på naturleden norr om herrgården.</td>
+         <td>Går genom områden som Gustaf Fröding skrev om. Längs leden finns grillplatser och fågeltorn.</td>
+       </tr>
+       <tr>
+         <td>Jäverön</td>
+         <td>Karlstad</td>
+         <td>3 och 10 och 17</td>
+         <td>Ja, börjar och slutar vid färjeläget.</td>
+         <td>Man tar sig till ön med båt. Det går färja och båtbuss. Vindskydd, grillplats och toalett finns.</td>
+       </tr>
+       <tr>
+         <td>Kyrkleden</td>
+         <td>Kil</td>
+         <td>5</td>
+         <td>Nej, går mellan Boda och Bässbol.</td>
+         <td>Går över stora och lilla Valfjället. Användes av sockenborna för att ta sig till kyrkan i Boda. Det finns gamla vilstenar att vila på längs leden.</td>
+       </tr>
+       <tr>
+         <td>Falletleden</td>
+         <td>Kil</td>
+         <td>5,5</td>
+         <td>Ja</td>
+         <td>Viker av från Frykenleden och följer Pickerudsbäckens ravinsystem. Ansluter åter på Frykenleden vid fornlämningen Fryksta Clara Elfs järnvägs gamla banvall vid ridhuset.</td>
+       </tr>
+       <tr>
+         <td>Nötöleden</td>
+         <td>Kristinehamn</td>
+         <td>5,5</td>
+         <td>Ja</td>
+         <td>Går i gammalt kulturlandskap med stora ekar. Kan kombineras med Arskagsleden för en 13 kilometer lång vandring. Raststuga finns.</td>
+       </tr>
+       <tr>
+         <td>Järnleden</td>
+         <td>Kristinehamn</td>
+         <td>30</td>
+         <td>Nej, går mellan Hytte och Kristinehamns gästhamn.</td>
+         <td>Kan gås i etapper. Rastplatser finns. Kan gås med app-guidning.</td>
+       </tr>
+       <tr>
+         <td>Sibberöns naturreservat</td>
+         <td>Kristinehamn</td>
+         <td>4</td>
+         <td>Nej, det är fyra kilometer enkel väg från Vålön till Sibberön.</td>
+         <td>Ta båt till Vålön. Sedan kan man vandra över Kalvön till Sibberön. Tilläggsplatser, grillplatser, utedass och stuga för övernattning finns. </td>
+       </tr>
+       <tr>
+         <td>Skalltjärnsrundan</td>
+         <td>Munkfors</td>
+         <td>6,1</td>
+         <td>Ja, börjar och slutar vid Stugan vid Granhöjden.</td>
+         <td>Finna gott om bär och svamp på sensommaren och hösten. Gummistövlar rekommenderas.</td>
+       </tr>
+       <tr>
+         <td>Hurtigrutten</td>
+         <td>Munkfors</td>
+         <td>5</td>
+         <td>Ja</td>
+         <td>Går ner till den vackra och högt belägna källsjön Ransjön. Finns gott om lingon på sommaren.</td>
+       </tr>
+       <tr>
+         <td>Stadsvandring</td>
+         <td>Munkfors</td>
+         <td>9,1</td>
+         <td>Ja</td>
+         <td>Går runt centrala Munkfors och informationskarta om sevärdheter finns. Toalett och rastplats finns.</td>
+       </tr>
+       <tr>
+         <td>Lårhöjdsleden</td>
+         <td>Storfors</td>
+         <td>13</td>
+         <td>Ja, börjar och slutar vid Badsta camping.</td>
+         <td>Man kan övernatta i stugan på Lårhöjden. Rastplats och badplats finns.</td>
+       </tr>
+       <tr>
+         <td>Gruvrundan, Gräsmark</td>
+         <td>Sunne</td>
+         <td>10 och 3</td>
+         <td>Ja</td>
+         <td>Går genom mycket varierad natur. Ter kilometers-rundan kallas Peckererundan. Rastplatser finns längs leden.</td>
+       </tr>
+       <tr>
+         <td>Länsmansnäset</td>
+         <td>Sunne</td>
+         <td>2</td>
+         <td>Ja</td>
+         <td>Kulturmark med rikt djurliv. Grillplats finns längst ut på näset.</td>
+       </tr>
+       <tr>
+         <td>Ängenleden</td>
+         <td>Sunne</td>
+         <td>17</td>
+         <td>Ja, går runt Ängsjön i Gräsmark.</td>
+         <td>Ligger i område där de första svedjefinnarna bodde. Många lämningar finns kvar. Rastplatser finns.</td>
+       </tr>
+       <tr>
+         <td>Duse udde</td>
+         <td>Säffle</td>
+         <td>Olika leder på mellan 3 och 10.</td>
+         <td>Ja</td>
+         <td>Går både i skog och klippmiljö. Klippbad finns.</td>
+       </tr>
+       <tr>
+         <td>Ekenäs - Åkershus - Ladholmen</td>
+         <td>Säffle</td>
+         <td>1 och 2 och 1,3</td>
+         <td>Ja</td>
+         <td>Går längst ut på Värmlandsnäs. Dass, rastplats och badplats finns.</td>
+       </tr>
+       <tr>
+         <td>Fämtleden</td>
+         <td>Torsby</td>
+         <td>7</td>
+         <td>Ja</td>
+         <td>Går förbi Fämtfallet och en 60 meter djup Kanjon norr om Ambjörby. Går via en 100 år gammal hängbro.</td>
+       </tr>
+       <tr>
+         <td>Hovfjället</td>
+         <td>Torsby</td>
+         <td>3,7 och 8 och 9 och 12</td>
+         <td>Ja, utgår från Hovfjällets topp.</td>
+         <td>Fyra leder utgår från toppen och går genom naturreservatet. Rastplats, raststuga, utsiktstorn och torrtoalett finns.</td>
+       </tr>
+       <tr>
+         <td>Blomskog</td>
+         <td>Årjäng</td>
+         <td>3</td>
+         <td>Nej, går mellan Borgåsgubben och Stenkäringen i Blomskog.</td>
+         <td>Borgåsgubben byggdes troligen under det stora nordiska kriget i början av 1700-talet, men kan vara betydligt äldre.Stenkäringen på Källte'kuel byggdes under hösten 1999 som ett minnesmärke inför milleniumskiftet. </td>
+       </tr>
+     </tbody>
+   </table>
+ </div>
+
+ <div>
+  <table>
+    <caption>Lättare leder där små barn och fikakorgen kan följa med.</caption>
+    <thead>
+      <tr>							
+        <th class="path">Led</th>
+        <th class="municipal">Kommun</th>
+        <th class="length">Längd (km)</th>
+        <th class="circulat">Återvänder till utgångspunkt</th>
+        <th class="other">Övrigt</th>
+      </tr>
+
+    </thead>
+  </thead>          
+  <tbody>
+    <tr>
+     <td>Bergs klätt</td>
+     <td>Arvika</td>
+     <td>3,5</td>
+     <td>Ja, börjar och slutar vid Berg.</td>
+     <td>Utsikt över Glafsfjorden, toaletter, grillplats och vindskydd finns.</td>
+   </tr>
+   <tr>
+     <td>Natur- och kulturstig Glaskogen</td>
+     <td>Arvika</td>
+     <td>5</td>
+     <td>Börjar i Lenungshammar</td>
+     <td>Historiska och geologiska sevärdheter. Café och rastplatser finns.</td>
+   </tr>
+   <tr>
+     <td>Natur- och kulturstigen Skutboudden </td>
+     <td>Arvika</td>
+     <td>2,3</td>
+     <td>Ja, börjar och slutar vid soldattorpet, Brunskogs hembygdsgård.</td>
+     <td>Natur- och kultursevärdheter.</td>
+   </tr>
+   <tr>
+     <td>Kulturvandring</td>
+     <td>Eda</td>
+     <td>10</td>
+     <td>Ja, börjar och slutar vid kommunhuset i Charlottenberg.</td>
+     <td>Informationshäfte om kultursevärdheter runtom leden finns på informationcentralen.</td>
+   </tr>
+   <tr>
+     <td>Säterleden</td>
+     <td>Eda</td>
+     <td>7</td>
+     <td>Nej, går mellan Remjäng och Remjängssätern.</td>
+     <td>Följer den gamla sätervägen mellan Remjängs vattensåg/spånhyvel och Remjängssätern</td>
+   </tr>
+   <tr>
+     <td>Kyrkleden</td>
+     <td>Eda</td>
+     <td>17</td>
+     <td>Nej, går mellan Skillingmarks kyrka och Valfjällets utsiktstorn.</td>
+     <td>Går upp på Valfjället med fin utsikt.</td>
+   </tr>
+   <tr>
+     <td>Trollstigen Lesjöfors</td>
+     <td>Filipstad</td>
+     <td>3</td>
+     <td>Ja</td>
+     <td>Finns både rastplats, tomtar och troll för små vandrare.</td>
+   </tr>
+   <tr>
+     <td>Getgarsudde</td>
+     <td>Grums</td>
+     <td>2,1</td>
+     <td>Ja</td>
+     <td>Går in i ett naturreservat. Högt naturvärde.</td>
+   </tr>
+   <tr>
+     <td>Silverleden</td>
+     <td>Grums</td>
+     <td>8,6</td>
+     <td>Ja, kan påbörjas vid Värmskogs vandrarhem eller LM Erikssons-gården</td>
+     <td>Historiskt intressant led. Går förbi flera gruvor. Större barngrupper rekommenderas inte att besöka området.</td>
+   </tr>
+   <tr>
+     <td>Brattfallet</td>
+     <td>Hagfors</td>
+     <td>1 och 2 kilometer</td>
+     <td>Ja, börjar och slutar vid Brattfallet</td>
+     <td>Går förbi Brattfallet uppströms till gamla flottningsdammen. Rastplats och handikappdass finns. Svåra Halgåleden börjar här.</td>
+   </tr>
+   <tr>
+     <td>Mariebergs strandängar</td>
+     <td>Karlstad</td>
+     <td>3</td>
+     <td>Ja, börjar och slutar vid Naturrum i Mariebergsskogen.</td>
+     <td>Går runt Mariebergs strandängar. Rikt fågelliv och vacker natur. Rastplatser finns.</td>
+   </tr>
+   <tr>
+     <td>Erlanderstigen</td>
+     <td>Munkfors</td>
+     <td>1,3</td>
+     <td>Ja, börjar och slutar vid Erlandergården i Ransäter.</td>
+     <td>Går genom biotopskyddad skog och över gammal stenbro. Rastplats finns.</td>
+   </tr>
+   <tr>
+     <td>Sahlströmsgårdens vandringsleder</td>
+     <td>Torsby</td>
+     <td>1,6 och 4</td>
+     <td>Ja, börjar och slutar vid Sahlströmsgården</td>
+     <td>Kultur- och naturleder i fin miljö. Det finns informationstavlor om om området.</td>
+   </tr>
+   <tr>
+     <td>Skulpturpromenad</td>
+     <td>Årjäng</td>
+     <td>3</td>
+     <td>Nej, går mellan Årjängs centrum och Kyrkeruds folkhögskola.</td>
+     <td>Går förbi flera skulpturer, de flesta i Bohusgranit, och art scape-målningar. Och Trollet så klart!</td>
+   </tr>
+ </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
