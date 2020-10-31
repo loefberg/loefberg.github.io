@@ -1,89 +1,39 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="HandheldFriendly" content="true">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>P-Piller</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <style>
+        /* https://coolors.co/210b2c-55286f-bc96e6-d8b4e2-ae759f */
+        :root {
+            --dark: #210B2C;
+            --eminence: #55286F;
+            --wisteria: #BC96E6;
+            --pink: #D8B4E2;
+            --pearly: #AE759F;
 
-      <title>P-Piller</title>
-      <style>
-          body, html {
-              margin: 0;
-              padding: 0;
-          }
+            --background-color: var(--pink);
+            --panel-color: var(--eminence);
+            --dark-font-color: var(--dark);
+            --light-font-color: var(--pink);
+        }
 
-          body {
-              display: flex;
-              font-family: Arial, sans-serif;
-          }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
 
-          #canvas {
-              border: none;
-          }
-
-          #settings {
-              margin-left: 10px;
-          }
-
-          div.field {
-            margin-top: 10px;
-          }
-
-          /** portrait */
-          @media (max-aspect-ratio: 640/420) {
-              body {
-                  flex-direction: column;
-              }
-
-              #canvas {
-                  width: 100%;
-                  height: calc(100vw * 0.65625);
-              }
-
-              #settings {
-
-              }
-          }
-
-          /** landscape */
-          @media (min-aspect-ratio: 640/420) {
-              body {
-                  flex-direction: row;
-              }
-
-              #canvas {
-                  width: calc(100vh * 1.333);
-                  height: calc(100vh - 4px);
-              }
-
-              #settings {
-
-              }
-          }
-
-      </style>
-  </head>
-  <body>
-    <canvas id="canvas"></canvas>
-    <div id="settings">
-        <div class="field">
-            <div>
-                <label for="started">Började ny karta:</label>
-            </div>
-            <div>
-                <input type="date" id="started">
-            </div>
-        </div>
-        <div class="field">
-            <div>
-                <label for="placebo">Antal sockerpiller:</label>
-            </div>
-            <div>
-                <input type="number" id="placebo">
-            </div>
-        </div>
-    </div>
-
-  <script src="bundle.js?423929321235bf97cdec"></script></body>
+        body {
+            background: var(--background-color);
+            font-family: 'Cairo', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <bp-app></bp-app>
+<script src="bundle.js?db62a5b63abf6ed401d6"></script></body>
 </html>
